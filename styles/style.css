@@ -2,6 +2,12 @@
     font-family: Roboto, sans-serif;
 }
 
+.all-content {
+    margin: auto;
+    width: 99vw;
+    /*border: 1px solid rgb(127, 168, 127);*/
+}
+
 .top-links {
     margin: auto;
     border: 1px solid black;
@@ -9,9 +15,9 @@
     margin: 0 auto;
 }
 
-.topnav a {
+.topnav a:link {
     float: left;
-    color: #140303;
+    color: #08041b;
     text-align: center;
     padding: 0.95em 1em;
     text-decoration: none;
@@ -24,6 +30,7 @@
 }
 
 .topnav a:hover {
+    border-radius: 5px;
     background-color: #dfd5d5;
     color: rgb(177, 15, 15);
 }
@@ -103,6 +110,11 @@ ul {
     /*font-weight: bold;*/
 }
 
+footer {
+    height: 5vh;
+    margin-bottom: 2vh;
+}
+
 footer ul {
     width: 50%;
     position: relative;
@@ -112,17 +124,16 @@ footer ul {
 
 footer ul li {
     font-weight: 400;
-    font-size: 2.8rem;
+    font-size: 1.2rem;
     /*Should be 2.87rem acording to Figma but grows too large*/
 }
 
 
 footer ul li a:link {
-    color: rgb(129, 18, 18);
+    text-decoration: none;
+    color: rgb(19, 3, 3);
 }
 
-/* for some reason, the visited and hover pseudo-classes are not working properly! :(((
-I even removed the footer.... part, but nothing helps*/
 footer ul li a:visited {
     color: green;
 }
