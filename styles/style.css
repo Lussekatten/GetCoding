@@ -1,0 +1,136 @@
+:root {
+    font-family: Roboto, sans-serif;
+}
+
+.top-links {
+    margin: auto;
+    border: 1px solid black;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.topnav a {
+    float: left;
+    color: #140303;
+    text-align: center;
+    padding: 0.95em 1em;
+    text-decoration: none;
+    font-size: 1rem;
+    /*Should be 1.75rem acording to Figma but grows too large*/
+}
+
+.topnav a:visited {
+    color: green;
+}
+
+.topnav a:hover {
+    background-color: #dfd5d5;
+    color: rgb(177, 15, 15);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-section {
+    /*border: 1px solid rgb(119, 11, 11);*/
+    width: auto;
+    height: 900px;
+    background-image: url('../images/get-coding.png');
+}
+
+.bottom-section {
+    /*border: 1px solid rgb(119, 11, 11);*/
+    width: auto;
+    height: 800px;
+    background-color: rgb(90, 103, 126);
+}
+
+.read-more {
+    /*border: 1px solid rgb(119, 11, 11);*/
+    height: 100px;
+    padding-top: 150px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.read-more p {
+    font-size: 1.25em;
+    /*Should be 2.25rem acording to Figma but grows too large*/
+    font-weight: 400;
+    color: rgb(231, 218, 218);
+    width: 90vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 1em;
+    margin: 0.25em 0.15em;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.button-effect {
+    background-color: rgb(99, 7, 71);
+    color: white;
+    border: 2px solid #04AA6D;
+}
+
+.button-effect:hover {
+    background-color: #04AA6D;
+    color: black;
+    /*font-weight: bold;*/
+}
+
+footer ul {
+    width: 50%;
+    position: relative;
+    float: right;
+    margin: 0;
+}
+
+footer ul li {
+    font-weight: 400;
+    font-size: 2.8rem;
+    /*Should be 2.87rem acording to Figma but grows too large*/
+}
+
+
+footer ul li a:link {
+    color: rgb(129, 18, 18);
+}
+
+/* for some reason, the visited and hover pseudo-classes are not working properly! :(((
+I even removed the footer.... part, but nothing helps*/
+footer ul li a:visited {
+    color: green;
+}
+
+footer ul li a:hover {
+    color: hotpink;
+}
+
+footer ul li a:active {
+    color: blue;
+}
