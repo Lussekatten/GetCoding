@@ -5,14 +5,22 @@
 .all-content {
     margin: auto;
     width: 99vw;
+    height: auto;
     /*border: 1px solid rgb(127, 168, 127);*/
 }
 
 .top-links {
     margin: auto;
-    border: 1px solid black;
     width: 80vw;
     margin: 0 auto;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #f2f6f7;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .topnav a:link {
@@ -45,26 +53,26 @@ ul li {
     margin-right: auto;
 }
 
-.top-section {
+.top-section img {
     /*border: 1px solid rgb(119, 11, 11);*/
-    width: auto;
-    height: 900px;
-    background-image: url('../images/get-coding.png');
+    width: 100vw;
+    height: auto;
+    /*background-image: url('../images/get-coding.png');*/
 }
 
 .bottom-section {
     /*border: 1px solid rgb(119, 11, 11);*/
-    width: auto;
-    height: 800px;
+    width: 100vw;
+    height: auto;
     background-color: rgb(90, 103, 126);
 }
 
 .read-more {
     /*border: 1px solid rgb(119, 11, 11);*/
-    height: 100px;
-    padding-top: 150px;
+    min-height: 250px;
+    padding-top: 4vw;
     color: white;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -144,4 +152,29 @@ footer ul li a:hover {
 
 footer ul li a:active {
     color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav ul li a:link {
+        font-size: 0.8rem;
+    }
+
+    footer ul li a:link {
+        font-size: 0.8rem;
+    }
+
+    .read-more p {
+        font-size: 1em;
+    }
+
+    .read-more {
+        width: 85%;
+    }
+
+    .button {
+        font-size: 0.8rem;
+    }
+    .top-links {
+        width: 85%;
+     }
 }
